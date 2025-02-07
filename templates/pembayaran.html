@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt</title>
+    <link rel="stylesheet" href="static/pembayaran.css">
+</head>
+<body>
+    <header>
+        <h1>Payment Receipt</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="payment.html">Make Payment</a></li>
+                <li><a href="receipt.html">Receipt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="receipt">
+        <h2>Transaction Successful</h2>
+        <p>Thank you for your payment. Below is your transaction receipt.</p>
+        <div class="receipt-details">
+            <p><strong>Transaction ID:</strong> <span id="transaction-id"></span></p>
+            <p><strong>Amount Paid:</strong> <span id="amount-paid"></span></p>
+            <p><strong>Payment Method:</strong> <span id="payment-method"></span></p>
+        </div>
+        <button onclick="window.print()" class="btn">Print Receipt</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Online Payment. All rights reserved.</p>
+    </footer>
+    
+    <script src="static/pembayaran.js"></script>
+</body>
+</html>
